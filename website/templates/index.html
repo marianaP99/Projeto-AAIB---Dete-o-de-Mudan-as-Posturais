@@ -1,0 +1,305 @@
+
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="pt">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="​AAIB Projeto">
+    <meta name="description" content="">
+    <title>AAIB Project</title>
+    <link rel="stylesheet"http://192.168.1.77:5000 href="{{ url_for('static', filename = "css/nicepage.css") }}" media="screen">
+    <link rel="stylesheet" href="{{ url_for('static', filename = "css/index_proj.css") }}" media="screen">
+    <script src="{{ url_for('static', filename = "js/plotly-2.16.1.min.js") }}"></script>
+    
+ <!--   
+ 
+ <script class="u-script" type="text/javascript"  src="{{ url_for('static', filename = "js/jquery.js") }}"  defer=""></script>
+    <script class="u-script" type="text/javascript"  src="{{ url_for('static', filename = "js/nicepage.js") }}" defer=""></script> 
+    <meta name="generator" content="Nicepage 5.1.5, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Oswald:200,300,400,500,600,700">
+        
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"logo": "static/img/logo_nova-st_rgb_horiz_positivo1.jpg"
+   }</script>
+    <meta name="theme-color" content="#0b188a">
+    <meta property="og:title" content="Página 2">
+    <meta property="og:type" content="website">
+ -->  
+  </head>
+
+  <body class="u-body u-xl-mode" data-lang="pt"><header class="u-clearfix u-header u-header" id="sec-5864">
+       
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js" integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA==" crossorigin="anonymous"></script>
+       
+       <div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-sheet-1">
+        <a class="u-image u-logo u-image-1" data-image-width="3508" data-image-height="841">
+          <img src="static/img/logo_nova-st_rgb_horiz_positivo1.jpg" class="u-logo-image u-logo-image-1">
+        </a>
+      </div>
+ 
+   
+    <section class="u-align-center u-clearfix u-image u-shading u-section-1" id="carousel_5ad0" src="" data-image-width="1782" data-image-height="1080">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h1 class="u-custom-font u-font-montserrat u-text u-text-body-alt-color u-title u-text-1">Postural Change Detector</h1>
+        <p class="u-large-text u-text u-text-body-alt-color u-text-font u-text-variant u-text-2">João Fragoso 56759<br>Mariana Pinto 52941<br>P3 | MIEB<br>
+        </p>
+        <p class="u-large-text u-text u-text-body-alt-color u-text-font u-text-variant u-text-3">Docentes:<br>Hugo Gamboa<br>Pedro Vieira
+        </p>
+        <p class="u-text u-text-body-alt-color u-text-4">AAIB 2022/23</p>
+      </div>
+    </section>
+
+    <section class="u-align-center u-clearfix u-grey-5 u-section-2" id="sec-e7f8">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-1"> Contexto</h2>
+        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-container-style u-layout-cell u-left-cell u-size-20 u-layout-cell-1">
+                <div class="u-container-layout u-container-layout-1">
+                  <p class="u-text u-text-default u-text-2">O presente projeto foi realizado no âmbito da unidade curricular de Aplicações Avançadas de Instrumentação Biomédica, e teve como objetivo o desenvolvimento de um classificador, baseado na extração de caraterísticas de sinais escolhidos pelo grupo.</p>
+                </div>
+              </div>
+              <div class="u-container-style u-layout-cell u-size-20 u-layout-cell-2">
+                <div class="u-container-layout u-container-layout-2">
+                  <p class="u-text u-text-default u-text-3">A monitorização à distância é um tema com especial interesse, principalmente nos últimos anos, no campo da Engenharia Biomédica. Neste sentido, e tendo em mente a possibilidade de monitorização de movimentos realizados por diversos indivíduos,</p>
+                </div>
+              </div>
+              <div class="u-container-style u-layout-cell u-right-cell u-size-20 u-layout-cell-3">
+                <div class="u-container-layout u-container-layout-3">
+                  <p class="u-text u-text-default u-text-4">o grupo optou pelo desenvolvimento de um classificador de movimentos, com o objetivo de identificar a mudança de posições, na posição sentada.&nbsp;As classes são as seguintes: movimento lateral direito e esquerdo, extensão e flexão, e parado.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="u-align-center u-clearfix u-grey-5 u-section-3" id="sec-49e5">
+      <div class="u-clearfix u-sheet u-valign-middle-xl u-sheet-1">
+        <form>
+           <input type='button' onclick=raspConnect() id='raspIP' value='Conectar!' class="u-active-palette-1-dark-2 u-border-none u-btn u-btn-round u-button-style u-hover-palette-1-dark-1 u-palette-1-dark-2 u-radius-10 u-text-active-white u-text-body-alt-color u-text-hover-white u-btn-1"></input>
+        </form>
+        
+      </div>
+    </section>
+    <section class="u-clearfix u-valign-middle-xl u-section-4" id="sec-a1a6">
+      <div class="u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1">
+        <div class="u-layout" style="">
+          <div class="u-layout-row" style="">
+            <div class="u-align-center u-container-style u-layout-cell u-left-cell u-size-30 u-size-xs-60 u-white u-layout-cell-1" src="">
+              <div class="u-container-layout u-valign-top-lg u-valign-top-md u-valign-top-sm u-valign-top-xs u-container-layout-1">
+                  <div id="graph_accx" style="width:600px;height:600px;"></div>
+                  <div id="graph_accy" style="width:600px;height:600px;"></div>
+                  <div id="graph_accz" style="width:600px;height:600px;"></div>
+              </div>
+            </div>
+            <div class="u-align-center u-container-style u-layout-cell u-right-cell u-size-30 u-size-xs-60 u-white u-layout-cell-2">
+              <div class="u-container-layout u-valign-top-lg u-valign-top-md u-valign-top-sm u-valign-top-xs u-container-layout-2">
+                  <div id="graph_gyrox" style="width:600px;height:600px;"></div>
+                  <div id="graph_gyroy" style="width:600px;height:600px;"></div>
+                  <div id="graph_gyroz" style="width:600px;height:600px;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="u-align-center u-clearfix u-palette-1-base u-valign-top-xl u-section-5" id="carousel_5f6d">
+      <img class="u-expanded-width u-image u-image-1" src="static/img/74723388-0.jpeg" data-image-width="500" data-image-height="500">
+      <div class="u-list u-list-1">
+        <div class="u-repeater u-repeater-1">
+          <div class="u-align-center u-container-style u-list-item u-repeater-item u-shape-round u-white u-list-item-1">
+            <div class="u-container-layout u-similar-container u-valign-top u-container-layout-1">
+              <div class="u-align-center u-container-style u-group u-palette-1-base u-radius-50 u-shape-round u-group-1">
+                <div class="u-container-layout u-valign-middle u-container-layout-2">
+                  <h2 class="u-custom-font u-font-oswald u-text u-text-1">1</h2>
+                </div>
+              </div>
+              <h6 class="u-text u-text-2"> Right-side bending</h6>
+              <img class="u-expanded-width u-image u-image-contain u-image-default u-image-2" src="static/img/Right.png" alt="" data-image-width="347" data-image-height="608">
+            </div>
+          </div>
+          <div class="u-align-center u-container-style u-list-item u-repeater-item u-shape-round u-white u-list-item-2">
+            <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3">
+              <div class="u-align-center u-container-style u-group u-palette-1-base u-radius-50 u-shape-round u-video-cover u-group-2">
+                <div class="u-container-layout u-valign-middle u-container-layout-4">
+                  <h2 class="u-custom-font u-font-oswald u-text u-text-3">2</h2>
+                </div>
+              </div>
+              <h6 class="u-text u-text-4"> Left-side bending</h6>
+              <img class="u-expanded-width u-image u-image-contain u-image-default u-image-3" src="static/img/Left.png" alt="" data-image-width="347" data-image-height="573">
+            </div>
+          </div>
+          <div class="u-align-center u-container-style u-list-item u-repeater-item u-shape-round u-white u-list-item-3">
+            <div class="u-container-layout u-similar-container u-valign-top u-container-layout-5">
+              <div class="u-align-center u-container-style u-group u-palette-1-base u-radius-50 u-shape-round u-video-cover u-group-3">
+                <div class="u-container-layout u-valign-middle u-container-layout-6">
+                  <h2 class="u-custom-font u-font-oswald u-text u-text-5">3</h2>
+                </div>
+              </div>
+              <h6 class="u-text u-text-6"> Extension movement</h6>
+              <img class="u-expanded-width u-image u-image-contain u-image-default u-image-4" src="static/img/Back.png" alt="" data-image-width="298" data-image-height="693">
+            </div>
+          </div>
+          <div class="u-align-center u-container-style u-list-item u-repeater-item u-shape-round u-white u-list-item-3">
+            <div class="u-container-layout u-similar-container u-valign-top u-container-layout-5">
+              <div class="u-align-center u-container-style u-group u-palette-1-base u-radius-50 u-shape-round u-video-cover u-group-3">
+                <div class="u-container-layout u-valign-middle u-container-layout-6">
+                  <h2 class="u-custom-font u-font-oswald u-text u-text-5">4</h2>
+                </div>
+              </div>
+              <h6 class="u-text u-text-6">Compression movement</h6>
+              <img class="u-expanded-width u-image u-image-contain u-image-default u-image-5" src="static/img/Front.png" alt="" data-image-width="296" data-image-height="582">
+            </div>
+          </div>
+          <div class="u-align-center u-container-style u-list-item u-repeater-item u-shape-round u-white u-list-item-5">
+            <div class="u-container-layout u-similar-container u-valign-top u-container-layout-9">
+              <div class="u-align-center u-container-style u-group u-palette-1-base u-radius-50 u-shape-round u-video-cover u-group-5">
+                <div class="u-container-layout u-valign-middle u-container-layout-10">
+                  <h2 class="u-custom-font u-font-oswald u-text u-text-9">5</h2>
+                </div>
+              </div>
+              <h6 class="u-text u-text-10">Standing<br>still
+              </h6>
+              <img class="u-expanded-width u-image u-image-contain u-image-default u-image-6" src="static/img/Standstil.jpeg" alt="" data-image-width="881" data-image-height="1600">
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2  id='pred' class="u-align-center u-text u-text-body-color u-text-default u-text-11"> Resultado </h2>
+      <p></p>
+    </section>
+    
+    <script type="text/javascript" charset="utf-8">
+            window_url = window.location.href.split(':')[1].substring(2)
+			// document.getElementById("raspIP").value = window_url
+            var socket = {}
+            var conn = false // está conectado?
+            
+			function raspConnect(){
+						    
+			    if(conn==false){
+			       // Initialize the socket	
+    			   socket = io.connect(window_url + ':5000/');
+			       console.log('connected');
+			       
+			       document.getElementById("raspIP").value = 'Começar!';
+			       conn = true;
+			    }
+			    
+			    else{	
+	    			    		  	    		                    
+                  var tt = []
+                  
+                  var acc_x = [] 
+                  var layout_accx = { title: 'Acelerómetro - X', 
+                                      xaxis: {title: 't(s)', showgrid: false, zeroline: false },
+                                      yaxis: { title: 'acc_x', showline: false } };
+                                     
+                  var acc_y = [] 
+                  var layout_accy = { title: 'Acelerómetro - Y', 
+                                      xaxis: { title: 't(s)', showgrid: false, zeroline: false },
+                                      yaxis: { title: 'acc_y', showline: false } };
+                
+                  var acc_z = []  
+                  var layout_accz = { title: 'Acelerómetro - Z', 
+                                      xaxis: { title: 't(s)', showgrid: false, zeroline: false },
+                                      yaxis: { title: 'acc_z', showline: false } };
+                  	
+                  	
+                  
+                  var gyro_x = [] 
+                  var layout_gyrox = { title: 'Giroscópio - X', 
+                                       xaxis: {title: 't(s)', showgrid: false, zeroline: false},
+                                       yaxis: {  title: 'gyro_x', showline: false}};
+                  
+                  var gyro_y = [] 
+                  var layout_gyroy = { title: 'Giroscópio - Y', 
+                                       xaxis: {title: 't(s)', showgrid: false, zeroline: false},
+                                       yaxis: {  title: 'gyro_y', showline: false}};
+                  
+                  var gyro_z = [] 
+                  var layout_gyroz = { title: 'Giroscópio - Z', 
+                                       xaxis: {title: 't(s)', showgrid: false, zeroline: false},
+                                       yaxis: {  title: 'gyro_z', showline: false}};                                        
+                      		   		    
+			      socket.emit('start');
+                  console.log('Iniciado');
+                  document.getElementById("raspIP").value = 'collecting data...';
+                  
+                  socket.on('timeseries', function(msg){
+                     
+                     if(msg == 'Something went wrong with the acquisition'){
+                         console.log(msg);
+                         document.getElementById("raspIP").value = 'Começar!';
+                     }                  
+                     
+     				
+     				else{     				
+                        if(msg.time==0.00){
+                         console.log("Acquiring Data");
+     				    }
+                     
+     				    tt.push(msg.time);
+     				    
+     				         				    
+     				    acc_x.push(msg.acc_x); 
+     				    acc_y.push(msg.acc_y); 
+     				    acc_z.push(msg.acc_z);      				    
+     				    
+     				    accx_graph = document.getElementById('graph_accx');                        
+	                    Plotly.newPlot(accx_graph, [{x: tt, y: acc_x, type: 'scatter'}], layout_accx);
+	                    
+	                    accy_graph = document.getElementById('graph_accy');                        
+	                    Plotly.newPlot(accy_graph, [{x: tt, y: acc_y, type: 'scatter'}], layout_accy);
+	                    
+	                    accz_graph = document.getElementById('graph_accz');                        
+	                    Plotly.newPlot(accz_graph, [{x: tt, y: acc_z, type: 'scatter'}], layout_accz);
+	                    
+	                    
+	                    gyro_x.push(msg.gyro_x);
+    				    gyro_y.push(msg.gyro_y); 
+    				    gyro_z.push(msg.gyro_z);
+     				    
+	                    gyrox_graph = document.getElementById('graph_gyrox');                        
+                        Plotly.newPlot(gyrox_graph, [{x: tt, y: gyro_x, type: 'scatter'}], layout_gyrox);
+                        
+                        gyroy_graph = document.getElementById('graph_gyroy');                        
+                        Plotly.newPlot(gyroy_graph, [{x: tt, y: gyro_y, type: 'scatter'}], layout_gyroy);
+                        
+                        gyroz_graph = document.getElementById('graph_gyroz');                        
+                        Plotly.newPlot(gyroz_graph, [{x: tt, y: gyro_z, type: 'scatter'}], layout_gyroz);
+	                }
+                  })
+                  
+                  socket.on('prediction', function(msg){
+                     document.getElementById("raspIP").value = 'Começar!';
+                     
+                     if(msg == 'Something went wrong with the classification'){
+                        console.log(msg);
+                     }
+                  
+                     else{
+                        document.getElementById("pred").innerHTML = msg;
+                        console.log('Aquisition Completed');
+                        console.log(msg);
+                     }
+			      })	
+			      		     
+                }
+                        
+            };
+          
+            
+                
+ 
+        </script> 
+
+</body></html>
